@@ -54,8 +54,8 @@ namespace ProgramingKatasCSharp
         public string Evaluate(int number)
         {
             string message = "";
-            if (number % 3 == 0) message += "Fizz";
-            if (number % 5 == 0) message += "Buzz";
+            if (number % 3 == 0 || number.ToString().Contains("3")) message += "Fizz";
+            if (number % 5 == 0 || number.ToString().Contains("5")) message += "Buzz";
 
             return string.IsNullOrEmpty(message) ? number.ToString() : message;
         }

@@ -19,7 +19,10 @@ namespace ProgramingKatasCSharpTest
         [InlineData(4, "4")]
         [InlineData(5, "Buzz")]
         [InlineData(6, "Fizz")]
+        [InlineData(13, "Fizz")]
         [InlineData(15, "FizzBuzz")]
+        [InlineData(55, "Buzz")]
+        [InlineData(45, "FizzBuzz")]
         public void Evaluate_ANumber_NumberOrFizzOrBuzzOrFizzBuz(int number, string expected)
         {
             // Act
@@ -33,8 +36,8 @@ namespace ProgramingKatasCSharpTest
         {
             // Arrange
             List<string> expected = new List<string> { "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz",
-                "13", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28",
-                "29", "FizzBuzz", "31", "32", "Fizz", };
+                "Fizz", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "Fizz", "Fizz", "Buzz", "26", "Fizz", "28",
+                "29", "FizzBuzz", "Fizz", "Fizz", "Fizz", };
 
             // Act
             var result = _sut.GetListValues(33);
