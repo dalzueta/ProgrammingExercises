@@ -14,3 +14,4 @@ All great software developers that we know are as good as they are because they 
 
 - Algorithmic
   - [KataFizzBuzz](docs/FizzBuzz.md)
+  - [Recursivity](docs/Recursivity.md)
