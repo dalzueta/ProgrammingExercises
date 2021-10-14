@@ -18,13 +18,13 @@ jobs:
           dotnet-version: 3.1.x
       - name: Restore dependencies
         run: |
-          cd src/ProgramingKatasCSharp
+          cd src/CSharpKatas/ProgramingKatasCSharp
           dotnet restore
       - name: Build
         run: |
-          cd src/ProgramingKatasCSharp
+          cd src/CSharpKatas/ProgramingKatasCSharp
           dotnet build --no-restore
       - name: Test
         run: |
-          cd src/ProgramingKatasCSharpTest
+          cd src/CSharpKatas/ProgramingKatasCSharpTest
           dotnet test --no-build --verbosity normal
